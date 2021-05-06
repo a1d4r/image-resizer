@@ -1,8 +1,8 @@
 # Image resizer web application
 
 Web service providing API for resizing images. A user can create task
-with image. Eventually, it will be executed, and will be available in 
-original resolution, 64x64 and 32x32.
+with an image to compress. Eventually, it will be executed and become available 
+in original resolution, 64x64 and 32x32.
 
 ## Description:
 
