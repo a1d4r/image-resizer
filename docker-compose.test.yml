@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  test:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        ENVIRONMENT: ${ENVIRONMENT:-development}
+    volumes:
+      - '.:/opt/app'
+    command: ["pytest", "-v", "tests"]
+    ports:
+      - '8080:8080'
